@@ -1,0 +1,41 @@
+/* Memberi gaya pada kotak awal */
+#kotak-animasi {
+    width: 100px;
+    height: 100px;
+    background-color: #007BFF; /* Biru */
+    border-radius: 8px;
+
+    /* INI ADALAH KUNCI ANIMASI:
+    Memberi tahu browser untuk menganimasikan perubahan pada properti 'transform'
+    selama 0.4 detik dengan efek 'ease-in-out'.
+    */
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Ini adalah 'state' atau keadaan akhir animasi kita.
+Ketika kotak ini memiliki kelas '.bergerak', CSS akan menerapkan properti ini.
+*/
+#kotak-animasi.bergerak {
+    /* Pindahkan elemen 300px ke kanan */
+    transform: translateX(300px);
+
+    /* Ubah juga warnanya */
+    background-color: #FF6347; /* Tomat */
+}
+
+/* Sedikit gaya untuk tombol agar lebih bagus */
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
